@@ -165,7 +165,7 @@ class Game {
 	onComplete() {
 		console.log("Done!");
 		this.state = "complete";
-		if (this.highscore == false || this.counter < this.highscore) {
+		if (!this.highscore || this.counter < this.highscore) {
 			this.highscore = this.counter;
 			this.SetHighscore(this.counter);
 		}
