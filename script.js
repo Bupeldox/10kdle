@@ -169,6 +169,7 @@ class Game {
 		if (!that.highscore || that.counter < that.highscore) {
 			that.highscore = that.counter;
 			that.SetHighscore(that.counter);
+			$("#bestScoreValue").text(this.highscore);
 		}
 	}
 	
