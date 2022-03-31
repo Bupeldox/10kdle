@@ -20,7 +20,7 @@ class Game {
 		function rngFromSeed(seed) {
 			return parseFloat(
 				"0." +
-					(seed * 23.23432 * Math.PI)
+					((seed*5.2352749217) / Math.PI)
 						.toString()
 						.slice(5)
 			);
