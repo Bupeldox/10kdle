@@ -164,10 +164,11 @@ class Game {
 	}
 	onComplete() {
 		console.log("Done!");
-		this.state = "complete";
-		if (!this.highscore || this.counter < this.highscore) {
-			this.highscore = this.counter;
-			this.SetHighscore(this.counter);
+		var that = gam;
+		that.state = "complete";
+		if (!that.highscore || that.counter < that.highscore) {
+			that.highscore = that.counter;
+			that.SetHighscore(that.counter);
 		}
 	}
 	
