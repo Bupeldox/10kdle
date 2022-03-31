@@ -20,7 +20,7 @@ class Game {
 		function rngFromSeed(seed) {
 			return parseFloat(
 				"0." +
-					Math.sin(seed * 23.234252)
+					(seed * 23.23432 * Math.PI)
 						.toString()
 						.slice(5)
 			);
