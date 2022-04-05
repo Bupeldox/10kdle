@@ -38,8 +38,8 @@ class Game {
 
 		function getPosFromDate() {
 			var seed = getDateNumber();
-			var x = Math.ceil(rngFromSeed(seed * 23023.232352) * size);
-			var y = Math.ceil(rngFromSeed(seed * 2342.532523) * size);
+			var x = Math.floor(rngFromSeed(seed * 23023.232352) * size);
+			var y = Math.floor(rngFromSeed(seed * 2342.532523) * size);
 			return { x: x, y: y };
 		}
 
